@@ -28,7 +28,7 @@
   </head>
   <body>
     <section class="container">
-      <div class="content-box">
+      <div class="content-box split">
         <h2 class="title">
           Get <span class="special-word">insights</span> that help your business
           grow.
@@ -37,25 +37,39 @@
           Discover the benefits of data analytics and make better decisions
           regarding revenue, customer experience, and overall efficiency.
         </p>
-        <div class="stats-box">
-          <table class="stats">
-            <tr>
-              <th>10k+</th>
-              <th>314</th>
-              <th>12m+</th>
-            </tr>
-            <tr>
-              <td>companies</td>
-              <td>templates</td>
-              <td>queries</td>
-            </tr>
-          </table>
+        <div>
+          <ul class="statistics-container">
+            <li class="statistic">
+              <p>10k+</p>
+              <span>COMPANIES</span>
+            </li>
+            <li class="statistic">
+              <p>314</p>
+              <span>TEMPLATES</span>
+            </li>
+            <li class="statistic">
+              <p>12M+</p>
+              <span>QUERIES</span>
+            </li>
+          </ul>
         </div>
       </div>
+  
+      </div>
 
-      <div class="image-box">
-        <img class="desktop-image" src="/images/image-header-desktop.jpg" />
+      <div class="image-box split">
+        <picture>
+          <source
+            srcset="/images/image-header-mobile.jpg"
+            media="(max-width: 588.5px)"
+          />
+          <img class="desktop-image" src="/images/image-header-desktop.jpg" />
+        </picture>
+
+        <div class="desktop-image layout"></div>
       </div>
     </section>
   </body>
 </html>
+
+<!-- srcset="/images/image-header-mobile.jpg" -->
